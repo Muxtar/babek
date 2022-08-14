@@ -58,6 +58,7 @@ td > button >  i{
 td > button > i.fa-trash{
     background-color: tomato;
     color: white;
+    margin-right: 5px;
 }
 
 td > button > i.fa-edit{
@@ -84,6 +85,19 @@ td > input{
     background-color: transparent;
     color: rgb(100, 100, 100);
     outline: none;
-    padding-left: 5px;
+    padding-left: 10px;
     transition: 1s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+tr.add{
+    display:none;
+    border: 1px solid red;
+}
+tr.add input{
+    /* border: 1px solid rgb(200, 200, 200); */
+    border: 1px solid red;
+} 
+tr.add i{
+    margin-right: 5px;
 }

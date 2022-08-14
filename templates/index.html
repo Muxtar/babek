@@ -13,6 +13,7 @@
 
         <div class="main">
             <table>
+
                 <thead>
                     <tr>
                         <th colspan="5" class="title">
@@ -22,7 +23,7 @@
                             </select>
                         </th>
                         <th class="title plus" style="color: black;" colspan="1">
-                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            <i class="fa fa-plus" aria-hidden="true" onclick="add()"></i>
                         </th>
                     </tr>
                     <tr>
@@ -33,10 +34,11 @@
                         <th colspan="2">Date</th>
                     </tr>
                 </thead>
+
                 <tbody>
                     <tr>
-                        <form action="">
-                            <td>1)</td>
+                        <form action="" id="1">
+                            <td>1</td>
                             <td><input type="text" value="Muxtar" disabled></td>
                             <td><input type="text" value="Bayramov" disabled></td>
                             <td><input type="text" value="kapitan" disabled></td>
@@ -50,9 +52,52 @@
                             </td>
                         </form>
                     </tr>
-         
+                    <tr>
+                        <form action="" id="2">
+                            <td>2</td>
+                            <td><input type="text" value="Omer" disabled></td>
+                            <td><input type="text" value="Veliyev" disabled></td>
+                            <td><input type="text" value="Leytnant" disabled></td>
+                            <td><input type="date" disabled></td>
+                            <td class="icons">
+                                <button type="button" onclick="editSave(this)"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                <button type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
 
+                            </td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form action="" id="3">
+                            <td>3</td>
+                            <td><input type="text" value="Rufet" disabled></td>
+                            <td><input type="text" value="Nuriyev" disabled></td>
+                            <td><input type="text" value="cavus" disabled></td>
+                            <td><input type="date" disabled></td>
+
+                            <td class="icons">
+
+                                <button type="button" onclick="editSave(this)"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                <button type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+                            </td>
+                        </form>
+                    </tr>
+                    <tr class="add">
+                        <form action="">
+                            <td colspan="2"><input type="text" value="" placeholder="Name"></td>
+                            <td><input type="text" value="" placeholder="Last name"></td>
+                            <td><input type="text" value="" placeholder="Rutbe"></td>
+                            <td><input type="date"></td>
+
+                            <td class="icons">
+
+                                <button type="button"><i class="fa fa-save" aria-hidden="true"></i></button>
+
+                            </td>
+                        </form>
+                    </tr>
                 </tbody>
+                
             </table>
         </div>
         <script src="../static/js/index.js"></script>
