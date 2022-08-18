@@ -10,95 +10,48 @@
         <title>Document</title>
     </head>
     <body>
-
         <div class="main">
             <table>
-
                 <thead>
-                    <tr>
-                        <th colspan="5" class="title">
-                            <select name="" id="">
-                                <option value="">Group1</option>
-                                <option value="">Group2</option>
-                            </select>
+                    <tr class="title">
+                        <th colspan="3" onclick="addUser()">Add new user +</th>
+                        <th colspan="3">
+                           <form action="">
+                                <select name="" id="">
+                                    <option value="">1</option>
+                                    <option value="">1</option>
+                                    <option value="">1</option>
+                                    <option value="">1</option>
+                                </select>
+                           </form>
                         </th>
-                        <th class="title plus" style="color: black;" colspan="1">
-                            <i class="fa fa-plus" aria-hidden="true" onclick="add()"></i>
-                        </th>
+                        <th colspan="3">
+                            <form action="">
+                                 <select name="" id="">
+                                     <option value="">Orxan</option>
+                                     <option value="">Muxtar</option>
+                                     <option value="">Eli</option>
+                                     <option value="">Vusal</option>
+                                 </select>
+                            </form>
+                         </th>
+ 
                     </tr>
-                    <tr>
-                        <th class="id">Id</th>
-                        <th>Name</th>
-                        <th>Last Name</th>
-                        <th>Rutbe</th>
-                        <th colspan="2">Date</th>
+                    <tr class="days">                        
+                        <th>
+                            User Name
+                        </th>                        
                     </tr>
                 </thead>
-
-                <tbody>
-                    <tr>
-                        <form action="" id="1">
-                            <td>1</td>
-                            <td><input type="text" value="Muxtar" disabled></td>
-                            <td><input type="text" value="Bayramov" disabled></td>
-                            <td><input type="text" value="kapitan" disabled></td>
-                            <td><input type="date" disabled></td>
-
-                            <td class="icons">
-
-                                <button type="button" onclick="editSave(this)"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                                <button type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
-
-                            </td>
-                        </form>
-                    </tr>
-                    <tr>
-                        <form action="" id="2">
-                            <td>2</td>
-                            <td><input type="text" value="Omer" disabled></td>
-                            <td><input type="text" value="Veliyev" disabled></td>
-                            <td><input type="text" value="Leytnant" disabled></td>
-                            <td><input type="date" disabled></td>
-                            <td class="icons">
-                                <button type="button" onclick="editSave(this)"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                                <button type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
-
-                            </td>
-                        </form>
-                    </tr>
-                    <tr>
-                        <form action="" id="3">
-                            <td>3</td>
-                            <td><input type="text" value="Rufet" disabled></td>
-                            <td><input type="text" value="Nuriyev" disabled></td>
-                            <td><input type="text" value="cavus" disabled></td>
-                            <td><input type="date" disabled></td>
-
-                            <td class="icons">
-
-                                <button type="button" onclick="editSave(this)"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                                <button type="button"><i class="fa fa-trash" aria-hidden="true"></i></button>
-
-                            </td>
-                        </form>
-                    </tr>
-                    <tr class="add">
-                        <form action="">
-                            <td colspan="2"><input type="text" value="" placeholder="Name"></td>
-                            <td><input type="text" value="" placeholder="Last name"></td>
-                            <td><input type="text" value="" placeholder="Rutbe"></td>
-                            <td><input type="date"></td>
-
-                            <td class="icons">
-
-                                <button type="button"><i class="fa fa-save" aria-hidden="true"></i></button>
-
-                            </td>
-                        </form>
-                    </tr>
-                </tbody>
-                
+                <tbody> 
+                  
+                </tbody>    
             </table>
+            <div class="add">
+                <input type="text" placeholder="Username" id="newUser">
+                <input type="button" value="add" onclick="addNewUser()">
+            </div>
+
         </div>
         <script src="../static/js/index.js"></script>
     </body>
