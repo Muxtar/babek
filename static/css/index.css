@@ -69,3 +69,13 @@ div.add{
     /* max-height: 0px; */
     overflow: hidden;
 }
+
+tbody > tr > th{
+    color: white;
+    font-size: 19px;
+    padding: 10px !important;
+}
+
+input[type=checkbox]{
+    margin-right: 10px;
+}
